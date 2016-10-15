@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
+    <div class="text-center">
+      <h1>Listing Articles</h1>
+      <%= link_to 'New article', new_article_path %>
+    </div>
+    <% @articles.each do |article| %>
+        <div class="col-xs-12">
+          <div class="text-center">
+            <h2><%= article.title %></h2>
+            <h6><%= article.created_at.strftime('%b %d, %Y') %></h6>
+          </div>
+
+          <div class="text-center">
+            <%= raw(article.text).truncate(358) %>
+          </div>
+
+          <div class="text-center">
+            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article_path(article),
+                                  method: :delete,
+                                  data: { confirm: 'Are you sure?' } %>
+          </div>
+          <br>
+        </div>
+    <% end %>
+  </div>
+</div>
