@@ -178,7 +178,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3)
   byebug
-  ckeditor (~> 4.1)
+  ckeditor
   coffee-rails (~> 4.2)
   execjs
   jbuilder (~> 2.5)
