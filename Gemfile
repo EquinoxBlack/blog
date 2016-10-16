@@ -29,6 +29,7 @@ gem 'ckeditor'
 gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'fog-aws'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem "mini_magick"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
