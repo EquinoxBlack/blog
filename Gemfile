@@ -27,7 +27,8 @@ gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'ckeditor'
 gem 'non-stupid-digest-assets', '~> 1.0.4'
-gem 'carrierwave'
+gem 'fog-aws'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
