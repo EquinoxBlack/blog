@@ -65,6 +65,11 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  # Precompile additional assets
+  config.assets.precompile += Ckeditor.assets
+  config.assets.precompile += %w( *.js )
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
